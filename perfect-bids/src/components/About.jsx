@@ -19,13 +19,13 @@ export default function Package() {
    
     <>
     
-    <div data-aos = "fade-right" className="relative gap-5 px-2 lg:px-28 py-12 packageContainer flex flex-col justify-center items-center text-center text-bright bg-dark bg-fixed">
+    <div data-aos = "fade-right" className="relative gap-5 px-2 lg:px-28 py-12 packageContainer flex flex-col justify-center items-center text-center  bg-backgroundBlue text-headerBlue bg-fixed">
         
     {/* <div className="absolute inset-0 bg-black opacity-10"></div> */}
         <div className="lg:w-2/3">
             {/* <h1 className="text-heading text-3xl">Our Company</h1> */}
             <h1 className=" transition ease-in duration-500  text-4xl lg:text-6xl font-bold">Who are we?</h1>
-            <h1 className="text-xl">At <span className="bg-slate font-bold">PerfectBids</span> Solutions we've experts who 
+            <h1 className="text-xl text-dark">At <span className="text-2xl font-bold text-headerBlue">PerfectBids</span> Solutions we've experts who 
             optimizes the bid and give you the chance to stand out, our estimation team has worked with big giants
             and gained the experience of how to simplify a project and make it easy for the contracters to bid.</h1>
         </div>
@@ -51,7 +51,7 @@ export default function Package() {
                         lg:w-[55%]">
         
         
-        <div className=" flex flex-col justify-between items-start p-8 bg-black/50 lg:bg-heading lg:w-[54%] text-xl font-bold">
+        <div className=" flex flex-col justify-between items-start p-8 bg-headerBlue text-bright lg:bg-heading lg:w-[54%] text-xl font-bold">
             <a className="hover:transition-color ease-in-out duration-700 bg-heading hover:lg:bg-bright  hover:text-black w-full flex p-3" href="#">01. </a>
             <a className="hover:transition-color ease-in-out duration-700 hover:text-black w-full flex p-3 hover:lg:bg-bright" href="#">02. </a>
             <a className="hover:transition-color ease-in-out duration-700 hover:text-black w-full flex p-3 hover:lg:bg-bright" href="#">03. </a>

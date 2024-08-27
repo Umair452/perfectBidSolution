@@ -8,7 +8,7 @@ export default function Header () {
   
       function onScrollChanger() {
         if (window.scrollY > 0) {
-          header.style.backgroundColor = '#282834';
+          header.style.backgroundColor = '#00a8a5';
           console.log(`I am executed`);
         } else {
           header.style.backgroundColor = 'transparent';
@@ -41,7 +41,7 @@ export default function Header () {
     <div className=" xl:flex hidden relative items-center text-xl  justify-around text-bright gap-12">
    
    
-    <button id="home dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" className="hover:text-heading hover:transition-colors ease-in-out duration-700 flex items-end home hover:text-orange-500 " type="button">
+    <button id="home dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" className="hover:scale-110 hover:transition-colors ease-in-out duration-700 flex items-end home " type="button">
         Home
         
 </button>
@@ -49,27 +49,27 @@ export default function Header () {
 
 
 
-<button id="dropdownHoverButton" data-dropdown-toggle="dropdownHoverTwo" data-dropdown-trigger="hover" className="hover:text-orange-500 hover:transition ease-in-out duration-500 hover:text-heading flex items-end" type="button">
+<button id="dropdownHoverButton" data-dropdown-toggle="dropdownHoverTwo" data-dropdown-trigger="hover" className="hover:scale-110 hover:transition ease-in-out duration-500 hover:text-heading flex items-end" type="button">
         About
         
 </button>
 
 
 
-<button className="hover:text-orange-500 flex items-end hover:text-heading hover:transition ease-in-out duration-500" id="dropdownHoverButton" data-dropdown-toggle="dropdownHoverThree" data-dropdown-trigger="hover"  type="button">
+<button className="hover:scale-110  flex items-end hover:text-heading hover:transition ease-in-out duration-500" id="dropdownHoverButton" data-dropdown-toggle="dropdownHoverThree" data-dropdown-trigger="hover"  type="button">
         Services
         
 </button>
 
 
 
-<button className="hover:text-orange-500 flex items-end hover:text-heading hover:transition ease-in-out duration-500" id="dropdownHoverButton" data-dropdown-toggle="dropdownHoverFour" data-dropdown-trigger="hover"  type="button">
+<button className="hover:scale-110 flex items-end hover:text-heading hover:transition ease-in-out duration-500" id="dropdownHoverButton" data-dropdown-toggle="dropdownHoverFour" data-dropdown-trigger="hover"  type="button">
         Estimation Samples
 </button>
 
 
 
-<div className="hover:text-orange-500 hover:text-heading hover:transition ease-in-out duration-500">
+<div className="hover:scale-110 hover:text-heading hover:transition ease-in-out duration-500">
     <a href="#">
         Contact Us
     </a>

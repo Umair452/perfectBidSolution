@@ -1,11 +1,12 @@
-import phone from '../assets/images/phone.svg'
+import mail from '../assets/images/mail.svg'
 import location from '../assets/images/location.svg'
+import arrows from '../assets/images/double-arrow.svg'
 
 export default function Footer() {
     return (
   
       <>
-      <div className="bg-gray text-dark flex flex-wrap justify-between bg-footer-bg bg-no-repeat bg-contain bg-bottom p-4 sm:px-14 sm:py-16 gap-7 lg:gap-0">
+      <div className="bg-footerBlue text-bright flex flex-wrap justify-between bg-footer-bg bg-no-repeat bg-contain bg-bottom p-4 sm:px-14 sm:py-16 gap-7 lg:gap-0">
           
   {/* <div>
   
@@ -39,22 +40,27 @@ export default function Footer() {
               <div>
                   <h1 className="font-bold text-2xl text-heading">Quick Links</h1>
               </div>
-              <div className="flex flex-col gap-2">
-                      <div className="flex ">
-                      
-                      <a href="#" className="hover:text-orange-500 hover:transition ease-in-out duration-500 ">Home</a>
+              <div className="flex flex-col gap-4 ">
+                      <div className="flex gap-1">
+                      <img src = {arrows} alt="" />
+                      <a href="#" className="hover:scale-110 hover:transition ease-in-out duration-500 ">Home</a>
                       </div>
-                      <div className="flex">
-                      
-                      <a href="#" className="hover:text-orange-500 hover:transition ease-in-out duration-500 ">Blog</a>
+                      <div className="flex gap-1">
+                      <img src = {arrows} alt="" />
+                      <a href="#" className="hover:scale-110 hover:transition ease-in-out duration-500 ">Services</a>
                       </div>
-                      <div className="flex">
-                      
-                      <a href="#" className="hover:text-orange-500 hover:transition ease-in-out duration-500 ">Products</a>
+                      <div className="flex gap-1">
+                      <img src = {arrows} alt="" />
+                      <a href="#" className="hover:scale-110 hover:transition ease-in-out duration-500 ">About Us</a>
                       </div>
-                      <div className="flex">
+                      <div className='flex gap-1'>
+                      <img src = {arrows} alt="" />
+                      <a href="#" className="hover:scale-110 hover:transition ease-in-out duration-500 ">Estimation Samples</a>
+                      </div>
                       
-                      <a href="#" className="hover:text-orange-500 hover:transition ease-in-out duration-500 ">Contact Us</a>
+                      <div className="flex gap-1">
+                      <img src = {arrows} alt="" />
+                      <a href="#" className="hover:scale-110 hover:transition ease-in-out duration-500 ">Contact Us</a>
                       </div>
                   
                   
@@ -68,7 +74,7 @@ export default function Footer() {
                   <h1 className="font-bold text-2xl text-heading">Contact info</h1>
               </div>
               <div className="flex  items-start gap-2">
-                  <div className="mt-1">
+                  <div className="">
                       <img src = {location} alt="location" />
                   </div>
                   <div className="flex flex-col gap-2">
@@ -76,23 +82,23 @@ export default function Footer() {
                       Our location:
                       </div>
                       <div>
-                      <p className="w-[244px] hover:text-orange-500  hover:transition ease-in-out duration-500 cursor-pointer"> 975 Liberty Ave, Union, NJ 07083, USA</p>
+                      <p className="w-[244px]  cursor-pointer"> 975 Liberty Ave, Union, NJ 07083, USA</p>
                       </div>
                   </div>
               </div>
   
               <div className="flex  items-start gap-2">
-                  <div className="mt-1">
-                      <img src = {phone} alt="" />
+                  <div className="">
+                      <img src = {mail} alt="" />
                   </div>
                   <div className="flex flex-col gap-2">
   
                       <div className="text-heading font-bold">
-                      Phones:
+                      Email Us:
                       </div>
-                      <div className="hover:text-orange-500  hover:transition ease-in-out duration-500 cursor-pointer">
-                      <p>+49078-039-23-11 </p>
-                      <p>+49078-039-23-11 </p>
+                      <div className=" cursor-pointer">
+                      <p>something@gmail.com</p>
+                      <p>something@gmail.com</p>
                       </div>
   
                   </div>

@@ -31,13 +31,14 @@ function App() {
   return (
     
 
-    <div className="bg-slate">
+    <div className="">
     <Header/>
     <Hero />
     <Package />
+    {/* <ReviewComponent /> */}
     {/* <LogoBar /> */}
-    <Sample samplesHeading="Residential Estimates" cards={residentialCards} />
-      <Sample samplesHeading="Commercial Estimates" cards={commercialCards} />
+    {/* <Sample samplesHeading="Residential Estimates" cards={residentialCards} />
+      <Sample samplesHeading="Commercial Estimates" cards={commercialCards} /> */}
     <Footer />
     </div>
   

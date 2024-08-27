@@ -11,7 +11,10 @@ export default {
         bright: '#ffffff',
         gray:'#f3f2f0',
         hoverColor:'rgb(255, 181, 35)',
-        slate:'#282834'
+        slate:'#282834',
+        backgroundBlue: '#eefffc',
+        headerBlue: '#00a8a5',
+        footerBlue: '#007c7c'
       },
       keyframes: {
         slideInFromRight: {
