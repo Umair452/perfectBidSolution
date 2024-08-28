@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
 const review = [
-    { name: 'Umair', text: 'I am very satisfied with their work' },
-    { name: 'Saad', text: 'I am very satisfied with their work' },
-    { name: 'Huzaifa', text: 'I am very satisfied with their work' },
-    { name: 'Talha', text: 'I am very satisfied with their work' }
+  { name: "Umair", text: "I am very satisfied with their work" },
+  { name: "Saad", text: "I am very satisfied with their work" },
+  { name: "Huzaifa", text: "I am very satisfied with their work" },
+  { name: "Talha", text: "I am very satisfied with their work" },
 ];
 
 export default function Review() {
@@ -22,11 +22,15 @@ export default function Review() {
   }, []);
 
   return (
-    <div>
+    <div className="flex justify-center items-center gap-4 flex-wrap">
       {randomReviews.map((review, index) => (
-        <div key={index}>
-          <h3>{review.name}</h3>
-          <p>{review.text}</p>
+        <div
+          key={index}
+          className="bg-white shadow-md rounded-lg p-6 max-w-xs w-1/4 
+                     flex-grow mx-2 my-4 text-center flex flex-col justify-between"
+        >
+          <h3 className="text-lg font-semibold mb-2">{review.name}</h3>
+          <p className="text-gray-700">{review.text}</p>
         </div>
       ))}
     </div>
