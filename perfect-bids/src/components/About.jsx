@@ -3,12 +3,12 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
 
-export default function Package() {
+export default function About() {
 
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in milliseconds (optional)
+      duration: 200, // Animation duration in milliseconds (optional)
       offset: 200,    // Offset from the original trigger point (optional)
       once: true,     // Whether animation should happen only once (optional)
     });
@@ -19,7 +19,7 @@ export default function Package() {
    
     <>
     
-    <div data-aos = "fade-right" className="relative gap-5 px-2 lg:px-28 py-12 packageContainer flex flex-col justify-center items-center text-center  bg-backgroundBlue text-headerBlue bg-fixed">
+    <div  className="relative gap-5 px-2 lg:px-28 py-12 packageContainer flex flex-col justify-center items-center text-center  bg-backgroundBlue text-headerBlue bg-fixed">
         
     {/* <div className="absolute inset-0 bg-black opacity-10"></div> */}
         <div className="lg:w-2/3">
@@ -36,7 +36,7 @@ export default function Package() {
 
 
 
-        <div data-aos = "fade-right"  className="lg:w-[45%] p-10 text-center  gap-4 lg:text-start bg-bright text-black flex flex-col justify-start">
+        <div  className="lg:w-[45%] p-10 text-center  gap-4 lg:text-start bg-bright text-black flex flex-col justify-start">
         <h1 className="text-4xl font-bold">How we proceed</h1>
         <p className="text-xl">
         We proceed in a simplified manner in order to deliver the client what he / she desires.</p>
@@ -47,7 +47,7 @@ export default function Package() {
 
 
 
-        <div data-aos = "fade-left" className="flex flex-col lg:flex-row lg:pb-32 justify-end bg-no-repeat bg-cover bg-center 
+        <div   className="flex flex-col lg:flex-row lg:pb-32 justify-end bg-no-repeat bg-cover bg-center 
                         lg:w-[55%]">
         
         

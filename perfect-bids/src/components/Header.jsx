@@ -41,7 +41,7 @@ export default function Header () {
     <div className=" xl:flex hidden relative items-center text-xl  justify-around text-bright gap-12">
    
    
-    <button id="home dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" className="hover:scale-110 hover:transition-colors ease-in-out duration-700 flex items-end home " type="button">
+    <button className="hover:scale-110 hover:transition-colors ease-in-out duration-700 flex items-end home " >
         Home
         
 </button>
@@ -63,8 +63,8 @@ export default function Header () {
 
 
 
-<button className="hover:scale-110 flex items-end hover:text-heading hover:transition ease-in-out duration-500" id="dropdownHoverButton" data-dropdown-toggle="dropdownHoverFour" data-dropdown-trigger="hover"  type="button">
-        Estimation Samples
+<button className="hover:scale-110 flex items-end hover:text-heading hover:transition ease-in-out duration-500" >
+        Portfolio
 </button>
 
 
