@@ -1,5 +1,4 @@
 // StatsCounter.jsx
-import React from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
@@ -11,24 +10,25 @@ const StatsCounter = () => {
   });
 
   return (
-    <div ref={ref} className="flex flex-col gap-4 md:flex-row md:gap-0 justify-evenly space-x-8 py-8">
+    <div
+      ref={ref}
+      className="flex flex-col gap-4 md:flex-row md:gap-0 justify-evenly space-x-8 py-8"
+    >
       <div className="text-center">
         <h2 className="text-4xl font-bold text-blue-500">
-        Projects {inView ? <CountUp start={0} end={100} duration={3} /> : 0}
+          Projects {inView ? <CountUp start={0} end={100} duration={3} /> : 0}
         </h2>
-        
       </div>
       <div className="text-center">
         <h2 className="text-4xl font-bold text-green-500">
-        Clients {inView ? <CountUp start={0} end={50} duration={3} /> : 0}
+          Clients {inView ? <CountUp start={0} end={50} duration={3} /> : 0}
         </h2>
-        
       </div>
       <div className="text-center">
         <h2 className="text-4xl font-bold text-purple-500">
-          Success Rate: {inView ? <CountUp start={0} end={99} duration={3} /> : 0}%
+          Success Rate:{" "}
+          {inView ? <CountUp start={0} end={99} duration={3} /> : 0}%
         </h2>
-        
       </div>
     </div>
   );
