@@ -13,23 +13,45 @@ export default function About() {
 
   return (
     <section id="aboutus">
-      <div className="relative gap-5 px-2 lg:px-28 py-12 packageContainer flex flex-col justify-center items-center text-center  bg-backgroundBlue text-headerBlue bg-fixed">
+      <div className=" relative gap-5 px-2 lg:px-28 py-12 packageContainer flex flex-col justify-center items-center text-center  bg-backgroundBlue text-headerBlue bg-fixed">
         {/* <div className="absolute inset-0 bg-black opacity-10"></div> */}
-        <div className="lg:w-2/3">
-          {/* <h1 className="text-heading text-3xl">Our Company</h1> */}
-          <h1 className="pt-10 transition ease-in duration-500  text-4xl lg:text-6xl font-bold">
-            Who are we?
-          </h1>
-          <h1 className="text-xl text-dark">
-            At{" "}
-            <span className="text-2xl font-bold text-headerBlue">
-              PerfectBids
-            </span>{" "}
-            Solutions we&apos;ve experts who optimizes the bid and give you the
-            chance to stand out, our estimation team has worked with big giants
-            and gained the experience of how to simplify a project and make it
-            easy for the contracters to bid.
-          </h1>
+        <div
+          className="relative bg-fixed bg-cover bg-center w-[100%] pb-10 mb-5"
+          style={{ backgroundImage: "url('orangishTint.webp')" }} // Replace with your image path
+        >
+          {/* Darker overlay for better text readability */}
+          <div className="absolute inset-0 bg-black opacity-60"></div>
+
+          <div className="max-w-5xl mx-auto relative z-10 p-4 sm:p-6 lg:p-8">
+            <h1 className="pt-20 transition ease-in duration-500 text-4xl lg:text-6xl font-bold text-headerBlue drop-shadow-lg">
+              Who are we?
+            </h1>
+            <p className="text-xl m-4 text-white text-justify leading-relaxed drop-shadow-md">
+              <strong>PerfectBid Solutions</strong> delivers precise and
+              targeted cost estimating and quantity takeoff services. With a
+              growing list of satisfied clients, we are proud to offer
+              industry-leading expertise in cost estimation and project
+              takeoffs.
+            </p>
+
+            <p className="text-xl m-4 text-white text-justify leading-relaxed drop-shadow-md">
+              Our team of skilled cost estimators and engineers brings years of
+              experience, combining functional engineering insights with
+              advanced cost estimation techniques. At PerfectBid Solutions, we
+              provide both public and private sector clients across the U.S. and
+              Canada with reliable, data-driven advice for their construction
+              projects.
+            </p>
+
+            <p className="text-xl m-4 text-white text-justify leading-relaxed drop-shadow-md">
+              Our mission is to <strong>empower developers</strong>,
+              contractors, and architects by helping them streamline their cost
+              estimation process, driving more sales and fostering long-term
+              client relationships. With a primary focus on construction, we
+              ensure our clients can make informed decisions, leading to project
+              success and sustained growth.
+            </p>
+          </div>
         </div>
 
         <div className="flex flex-col lg:flex-row w-full">
@@ -47,37 +69,40 @@ export default function About() {
             className="flex flex-col lg:flex-row lg:pb-32 justify-end bg-no-repeat bg-cover bg-center 
                         lg:w-[55%]"
           >
-            <div className=" flex flex-col justify-between items-start p-8 bg-headerBlue text-bright lg:bg-heading lg:w-[54%] text-xl font-bold">
-              <a
-                className="hover:transition-color ease-in-out duration-700 bg-heading hover:lg:bg-bright  hover:text-black w-full flex p-3"
-                href="#"
-              >
-                01.{" Sample "}
-              </a>
-              <a
-                className="hover:transition-color ease-in-out duration-700 hover:text-black w-full flex p-3 hover:lg:bg-bright"
-                href="#"
-              >
-                02.{" Sample "}
-              </a>
-              <a
-                className="hover:transition-color ease-in-out duration-700 hover:text-black w-full flex p-3 hover:lg:bg-bright"
-                href="#"
-              >
-                03.{" Sample "}
-              </a>
-              <a
-                className="hover:transition-color ease-in-out duration-700 hover:text-black w-full flex p-3 hover:lg:bg-bright"
-                href="#"
-              >
-                04.{" Sample "}
-              </a>
-              <a
-                className="hover:transition-color ease-in-out duration-700 hover:text-black w-full flex p-3 hover:lg:bg-bright"
-                href=""
-              >
-                05.{" Sample "}
-              </a>
+            <div className="flex flex-col items-start p-8 bg-headerBlue text-bright lg:bg-heading lg:w-[54%] space-y-6">
+              <div className="w-full text-justify p-4 border-l-4 border-yellow-400 bg-white/10 rounded-md">
+                <span className="text-lg font-semibold ">
+                  01. Weekend Service at no extra charge – stress-free project
+                  deadlines.
+                </span>
+              </div>
+
+              <div className="w-full p-4 border-l-4 text-justify border-blue-400 bg-white/10 rounded-md">
+                <span className="text-lg font-semibold text-justify">
+                  02. Dedicated resource for personalized attention and fast
+                  results.
+                </span>
+              </div>
+
+              <div className="w-full p-4 border-l-4 text-justify border-green-400 bg-white/10 rounded-md">
+                <span className="text-lg font-semibold text-justify">
+                  03. 50% off your first project – seamless and accurate
+                  estimation.
+                </span>
+              </div>
+
+              <div className="w-full p-4 border-l-4 text-justify border-purple-400 bg-white/10 rounded-md">
+                <span className="text-lg font-semibold text-justify">
+                  04. Your peace of mind and project success are our top
+                  priorities.
+                </span>
+              </div>
+
+              <div className="w-full p-4 border-l-4 text-justify border-red-400 bg-white/10 rounded-md">
+                <span className="text-lg font-semibold text-justify">
+                  05. Reach out anytime – we&apos;re here to help you succeed!
+                </span>
+              </div>
             </div>
           </div>
         </div>

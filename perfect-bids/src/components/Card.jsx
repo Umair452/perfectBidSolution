@@ -1,14 +1,9 @@
 // eslint-disable-next-line react/prop-types
-export default function Card({ cardHeading, cardImage }) {
+export default function Card({ cardHeading, cardDescription }) {
   return (
-    <section className="bg-transaperent text-bright flex flex-col items-center rounded-md p-4 w-3/4 md:w-1/4 hover:-translate-y-2 hover:transition ease-in-out duration-1000">
-      <img src={cardImage} alt="card image" className="w-12 h-12 mb-4" />
-      <h1 className="text-bright text-center text-lg font-medium">
-        {cardHeading}
-      </h1>
-      <button className="bg-dark text-white px-6 py-2 rounded-full hover:bg-slate focus:outline-none">
-        View Sample Here
-      </button>
+    <section className="bg-white shadow-md text-dark flex flex-col items-center rounded-lg p-6 w-full md:w-1/3 hover:shadow-lg hover:-translate-y-2 transition-transform duration-500 ease-in-out">
+      <h1 className="text-xl font-bold text-center mb-4">{cardHeading}</h1>
+      <p className="text-center text-gray-600">{cardDescription}</p>
     </section>
   );
 }

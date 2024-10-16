@@ -32,11 +32,13 @@ export default function Header() {
       className="bg-transperent fixed z-20 flex transition-colors duration-700 ease headerDiv items-center justify-between p-3 lg:py-6 lg:px-14  top-0 left-0 w-full"
     >
       <section className="">
-        <img
-          className="object-contain max-h-14 sm:max-h-20"
-          src="/logo.png"
-          alt="logo"
-        />
+        <Link to="/">
+          <img
+            className="object-contain max-h-12 sm:max-h-14"
+            src="/logoWhite.png"
+            alt="logo"
+          />
+        </Link>
       </section>
 
       <div className=" xl:flex hidden relative items-center text-xl  justify-around text-bright gap-12">
@@ -102,11 +104,13 @@ export default function Header() {
         aria-labelledby="drawer-right-label"
       >
         <div className="flex flex-row justify-between">
-          <img
-            className="object-contain  max-h-14 sm:max-h-20"
-            src="/logo.png"
-            alt="logo"
-          />
+          <Link to="/">
+            <img
+              className="object-contain  max-h-14 sm:max-h-20"
+              src="/logoWhite.png"
+              alt="logo"
+            />
+          </Link>
 
           <button
             type="button"
@@ -243,7 +247,7 @@ export default function Header() {
               to="/portfolio"
               className="font-bold  ms-3 text-left rtl:text-right whitespace-nowrap"
             >
-              Estimation Samples
+              Portfolio
             </Link>
             {/* <svg className="ml-2 w-3 h-3 -rotate-90" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                     <path stroke="currentColor" strokeLinecap="round" stroke-linejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>

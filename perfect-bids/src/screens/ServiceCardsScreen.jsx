@@ -1,26 +1,42 @@
-import Micasta from "../assets/images/Micasita.jpg";
-import topImage from "../assets/images/portfolioOne.jpg";
 import Sample from "../sections/Sample";
 
 export default function ServiceCardsScreen() {
   const cards = [
-    { heading: "First Project", image: Micasta },
-    { heading: "Second Project", image: topImage },
-    { heading: "Third Project", image: Micasta },
-    { heading: "Fourth Project", image: topImage },
-    { heading: "Fifth Project", image: Micasta },
-    { heading: "Sixth Project", image: topImage },
-    { heading: "Seventh Project", image: Micasta },
-    { heading: "Eighth Project", image: topImage },
-    { heading: "Ninth Project", image: Micasta },
-    { heading: "Tenth Project", image: topImage },
-    { heading: "Eleventh Project", image: Micasta },
-    { heading: "Twelfth Project", image: topImage },
+    {
+      heading: "Mechanical Electrical & Plumbing (MEP)",
+      description:
+        "Comprehensive MEP solutions ensuring optimal performance and safety in all projects.",
+    },
+    {
+      heading: "Structured Cabling (Telecommunication)",
+      description:
+        "High-quality cabling services to support robust communication infrastructure.",
+    },
+    {
+      heading: "Security System",
+      description:
+        "Advanced security systems designed to safeguard your premises and personnel.",
+    },
+    {
+      heading: "Audio & Visual System",
+      description:
+        "Top-tier AV systems that provide a seamless experience for presentations and events.",
+    },
+    {
+      heading: "Fire Alarm System",
+      description:
+        "Reliable fire alarm installations to ensure safety and compliance with regulations.",
+    },
+    {
+      heading: "HVAC, Demolition, Lighting Protection",
+      description:
+        "Comprehensive HVAC, demolition, and lightning protection services for various projects.",
+    },
   ];
 
   return (
-    <>
-      <Sample samplesHeading="These are some Samples" cards={cards} />
-    </>
+    <div className="bg-slate pb-10">
+      <Sample samplesHeading="Our Services" cards={cards} />
+    </div>
   );
 }

@@ -27,7 +27,11 @@ export default function Footer() {
 
         <div className="hidden  w-1/4 xl:flex flex-col justify-between">
           <div>
-            <img className="" src="/logo.png" alt="logo" />
+            <img
+              className="object-contain max-h-14 sm:max-h-20"
+              src="/logoWhite.png"
+              alt="logo"
+            />
           </div>
           <div className="max-w-52 text-justify">
             <p>
@@ -74,7 +78,7 @@ export default function Footer() {
                 to="/portfolio"
                 className="hover:scale-110 hover:transition ease-in-out duration-500 "
               >
-                Estimation Samples
+                Portfolio
               </Link>
             </div>
 
@@ -116,8 +120,7 @@ export default function Footer() {
             <div className="flex flex-col gap-2">
               <div className="text-heading font-bold">Email Us:</div>
               <div className=" cursor-pointer">
-                <p>something@gmail.com</p>
-                <p>something@gmail.com</p>
+                <p>support@perfectbidsolutions.com</p>
               </div>
             </div>
           </div>
